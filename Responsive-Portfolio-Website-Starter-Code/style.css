@@ -1,0 +1,284 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+/* font-family: "Open Sans", serif; */
+* {
+  margin: 0;
+  padding: 0;
+}
+.open-sans-font {
+  font-family: "Open Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.header {
+  padding-top: 50px;
+  background-color: #fff8f3;
+  background-image: url("../images/developer.png"),
+    url("../images/header_bg.png");
+  background-repeat: no-repeat;
+
+  background-position: top left, bottom right;
+}
+
+.title-highlight {
+  color: #fd6e0a;
+}
+
+.nav-title {
+  font-size: 45px;
+  font-weight: 800;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 200px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  margin-left: 50px;
+}
+
+.dark-01 {
+  color: #181818;
+}
+
+.dark-02 {
+  color: #474747;
+}
+
+.dark-03 {
+  color: #757575;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #fd6e0a;
+  font-weight: bold;
+  font-size: 20px;
+  border: none;
+  padding: 18px 36px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.btn-secondary {
+  color: #fd6e0a;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 5px;
+  border: 2px solid #fd6e0a;
+  background-color: transparent;
+  padding: 18px 36px;
+}
+
+.btn-icon {
+  height: 30px;
+  margin-bottom: -5px;
+  margin-right: 10px;
+}
+
+.banner-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.banner-content h1 {
+  font-size: 85px;
+}
+
+.banner-content h3 {
+  font-size: 45px;
+}
+.banner-content p {
+  font-size: 18px;
+  margin-right: 500px;
+  margin-bottom: 40px;
+}
+
+.banner {
+  display: flex;
+  margin-left: 200px;
+  margin-right: 50px;
+  justify-content: space-between;
+}
+
+.header-button button {
+  margin-right: 30px;
+}
+
+main {
+  /* width: 1500px; */
+  margin: 0 200px;
+}
+
+.about-title {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.about-container {
+  margin-top: 100px;
+  background-color: #fff8f3;
+  padding: 150px 200px;
+  margin-bottom: 100px;
+}
+
+.about-elements {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  background-color: #fff;
+  border: 1px solid #000;
+  text-align: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.about-items {
+  display: flex;
+  justify-content: space-around;
+}
+
+.itemdescription {
+  font-weight: bold;
+}
+
+.skills-title {
+  font-size: 35px;
+}
+.skills-description {
+  margin: 30px 300px;
+}
+.skill-container {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 100px;
+  text-align: left;
+}
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 30px;
+  box-shadow: 0 6px 50px 0 rgb(0 0 0 /6%);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.skill-item > img {
+  width: 50px;
+}
+
+.resume-container {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+
+.resume-title {
+  font-size: 35px;
+  margin-bottom: 100px;
+}
+
+.column-title {
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+
+.item-title {
+  font-size: 25px;
+  margin-top: 20px;
+}
+.item-sub-title {
+  font-size: 25px;
+  margin-top: 20px;
+}
+
+.resume-item > p {
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.resume-item > hr {
+  margin: 30px 0;
+}
+
+.resume-section {
+  margin-bottom: 100px;
+}
+
+footer {
+  background-color: #fff8f3;
+}
+
+.footer-container {
+  margin: 0 200px;
+  padding: 200px 100px;
+  display: flex;
+  gap: 200px;
+}
+
+.footer-form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.footer-section-title {
+  font-size: 35px;
+}
+
+.footer-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  width: 50%;
+}
+
+footer input[type="text"],
+footer input[type="email"],
+footer textarea {
+  /*height: 64px;
+  */
+  padding: 10px 20px;
+  /*margin-bottom: 24px;
+  */
+  border: none;
+  font-family: "Open Sans", serif;
+  width: 100%;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.footer-form > input.submit.btn-primary {
+  text-align: center;
+  width: 50%;
+  /* display: inline; */
+}
