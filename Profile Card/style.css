@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Montserrat, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.single-card {
+    width: 350px;
+    height: 450px;
+    position: relative;
+}
+
+.card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 25px;
+    background: #fff;
+    text-align: center;
+}
+
+/* Image Area */
+.card .img-area {
+    width: 100%;
+    height: 100%; /* Image takes 60% of the card height */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .img-area img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    transition: 0.5s;
+}
+
+/* Hover Effect: Image Moves Up Slightly */
+.card:hover .img-area img {
+    transform: translateY(-10px);
+}
+
+/* Social Media Icons */
+.socials {
+    position: absolute;
+    left: 50%;
+    bottom: 100px;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 15px;
+    z-index: 3;
+}
+
+.socials li {
+    list-style: none;
+}
+
+.socials li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    text-decoration: none;
+    border-radius: 50%;
+    color: #333;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: 0.5s ease-in-out;
+    transform: translateY(30px);
+    opacity: 0;
+}
+
+/* Hover Effect: Icons Slide Up */
+.card:hover .socials li a {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Add Delay to Each Icon */
+.card:hover li:nth-child(1) a {
+    transition-delay: 0.3s;
+}
+.card:hover li:nth-child(2) a {
+    transition-delay: 0.5s;
+}
+.card:hover li:nth-child(3) a {
+    transition-delay: 0.7s;
+}
+.card:hover li:nth-child(4) a {
+    transition-delay: 0.9s;
+}
+
+/* Hover Effect: Change Icon Color */
+.socials li a:hover {
+    background: #0073b1; /* Example: LinkedIn Blue */
+    color: #fff;
+}
+
+/* Info Section */
+.info {
+    position: absolute;
+    bottom: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+/* Hover Effect: Show Name & Title */
+.card:hover .info {
+    bottom: 0;
+    opacity: 1;
+}
+
+.info h2 {
+    font-size: 22px;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.info h2 span {
+    font-size: 16px;
+    color: #ddd;
+}
